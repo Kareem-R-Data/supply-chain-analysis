@@ -41,7 +41,7 @@ The raw dataset (DataCo Smart Supply Chain for Big Data Analysis) was sourced fr
 
 ## Dashboard (Power BI)
 
-Built 4 interactive dashboard pages covering sales performance, profitability, and key business insights.
+Built 6 interactive dashboard pages covering sales performance, profit, and key business insights.
 
 ## Power BI Measures
 
@@ -53,8 +53,9 @@ Built 4 interactive dashboard pages covering sales performance, profitability, a
 - **AOV (Average Order Value)**: Average amount spent per order
 - **Total Quantity**: Sum of items ordered
 - **% Late Delivery**: Percentage of orders delivered later than scheduled
-- **Suspected Fraud %**: Percentage of orders flagged as suspected fraud
-- **Suspected Fraud Count**: Count of orders flagged as suspected fraud
+- **AVG Unit Cost**: COGS divided by quantity
+- **AVG Unit Price**: Net sales divided by quantity
+- **Profit Per Unit**: AVG unit price - AVG unit cost
 
 ## Files in this Repository
 
@@ -67,7 +68,9 @@ Built 4 interactive dashboard pages covering sales performance, profitability, a
 | `dashboard1_preview.png` | Sales Report dashboard preview |
 | `dashboard2_preview.png` | Profit Report dashboard preview |
 | `dashboard3_preview.png` | Insights: Sales trend and profitability by category |
-| `dashboard4_preview.png` | Insights: Late delivery and suspected fraud analysis |
+| `dashboard4_preview.png` | Insights: Shipping mode and late delivery analysis |
+| `dashboard5_preview.png` | Insights: Sales drop by year and quarter |
+| `dashboard6_preview.png` | Insights: Sales and profit per unit by department name |
 
 ## Dashboard Previews
 
@@ -80,12 +83,31 @@ Built 4 interactive dashboard pages covering sales performance, profitability, a
 ### Dashboard 3: Sales & Profitability Insights
 ![Dashboard 3](dashboard3_preview.png)
 
-### Dashboard 4: Delivery & Fraud Insights
+### Dashboard 4: Shipping Mode Insights
 ![Dashboard 4](dashboard4_preview.png)
+
+### Dashboard 5: Sales Drop Insights
+![Dashboard 5](dashboard5_preview.png)
+
+### Dashboard 5: Sales By Department Insights
+![Dashboard 6](dashboard6_preview.png)
 
 ## Key Insights
 
-- Sales dropped sharply in Q4 2017, reversing the stable trend seen earlier in the year, warranting further investigation into potential causes (inventory, marketing, or market-specific issues).
-- Strength Training generates high sales volume but only a 1% profit margin, while Hunting and Shooting achieves a 4% margin on far lower sales, suggesting a pricing or cost structure issue.
-- First Class shipping shows a 95.32% late delivery rate, the highest across all shipping modes.
-- Suspected fraud rates at the country level are based on very small sample sizes in some cases, making them unreliable indicators at this data volume.
+### Insight 1
+**Summary:** Strength Training generates 49K in sales but only 1% margin, while Golf Bags & Carts achieves 19% margin on just 9.5K.
+
+**Recommendation:** Strength Training's pricing or cost structure needs review despite its higher volume,and work on increasing sales of golf bags & carts.
+
+### Insight 2
+**Summary:** First Class shipping shows a 95.32% late delivery rate — the highest across all shipping modes and a critical issue requiring immediate attention.
+
+### Insight 3
+**Summary:** Quantity in Q4 dropped from over 30,000 units between Q1 and Q3 to 6,669. The decline in sales appears to be driven by an increase in the AOV, which rose to 308.08.
+
+**Recommendation:** The AOV should be reduced in order to boost sales again, especially since profitability reached 12% during this period despite the decline in sales.
+
+### Insight 4
+**Summary:** These are the top six departments by sales. The figures show a variation in profit per unit, with the Technology department clearly outperforming the others at 149.45 profit per unit.
+
+**Recommendation:** Focus should be placed on increasing Technology inventory if the shortfall in quantity is due to stock levels, or on marketing the products more effectively if the cause is low purchasing, for example through discounts.
