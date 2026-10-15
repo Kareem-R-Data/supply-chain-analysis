@@ -89,7 +89,7 @@ Built 6 interactive dashboard pages covering sales performance, profit, and key 
 ### Dashboard 5: Sales Drop Insights
 ![Dashboard 5](dashboard5_preview.png)
 
-### Dashboard 5: Sales By Department Insights
+### Dashboard 6: Sales By Department Insights
 ![Dashboard 6](dashboard6_preview.png)
 
 ## Key Insights
